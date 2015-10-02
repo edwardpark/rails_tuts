@@ -5,8 +5,42 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
+
+<!-- Main Navigation -->
+<div class="navigation-container">
+	<nav id="navigation" class="navbar navbar-lenasia" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+					<span class="sr-only">Toggle navigation</span>
+					<i class="fa fa-bars"></i> Menu
+				</button>
+			</div>
+
+			<div class="collapse navbar-collapse" id="main-nav">
+				<ul class="nav navbar-nav" role="tablist">
+					<li class="active"><a class="page-scroll" href="#top"><i class="fa fa-home"></i></a></li>
+					<li><a class="page-scroll" href="#service">About</a></li>
+					<li><a class="page-scroll" href="#portfolio">Tutorials</a></li>
+					<li><a class="page-scroll" href="#explanation">Snippets</a></li>
+					<li><a class="page-scroll" href="#contact">Contribute</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+</div>
+<!-- end:Navigation -->
 
 <%= yield %>
 
